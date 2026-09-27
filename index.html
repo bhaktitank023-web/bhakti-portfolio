@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bhakti Tank - BTech IT student portfolio showcasing projects, skills, education and contact information.">
+  <title>Bhakti Tank | IT Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Bhakti Tank home">BT</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+              aria-expanded="false" aria-controls="navLinks">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">BTech IT Student • Web & Programming</p>
+          <h1>Hi, I'm <span>Bhakti Tank</span>.</h1>
+          <p class="hero-description">
+            I am a BTech Information Technology student who enjoys building practical
+            software projects, learning programming concepts, and creating useful web experiences.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="profile-card" aria-label="Profile introduction">
+          <div class="avatar" aria-hidden="true">BT</div>
+          <h2>Bhakti Tank</h2>
+          <p>Information Technology Student</p>
+          <div class="quick-stats">
+            <div><strong>IT</strong><span>Field</span></div>
+            <div><strong>Web</strong><span>Interest</span></div>
+            <div><strong>Code</strong><span>Practice</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">A student who likes learning by building.</h2>
+        <div class="about-grid">
+          <div>
+            <p>
+              I am pursuing a Bachelor of Technology in Information Technology.
+              My academic work has given me experience with programming, data structures,
+              computer networks, databases, web development, and software tools.
+            </p>
+            <p>
+              I enjoy turning concepts into practical projects and improving my skills
+              through hands-on activities, coding practice, and collaborative events.
+            </p>
+          </div>
+          <div class="info-box">
+            <h3>What I’m working on</h3>
+            <ul>
+              <li>Improving Java, C++ and web development skills</li>
+              <li>Building responsive websites</li>
+              <li>Practicing Git and GitHub workflows</li>
+              <li>Learning through practical projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-section">
+      <div class="container">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">Tools and technologies</h2>
+        <div class="skills-grid">
+          <article class="skill-card"><span>HTML</span><p>Semantic page structure and accessibility.</p></article>
+          <article class="skill-card"><span>CSS</span><p>Responsive layouts, styling and animations.</p></article>
+          <article class="skill-card"><span>JavaScript</span><p>Interactive and dynamic web features.</p></article>
+          <article class="skill-card"><span>Java</span><p>Object-oriented programming and problem solving.</p></article>
+          <article class="skill-card"><span>C / C++</span><p>Programming fundamentals and data structures.</p></article>
+          <article class="skill-card"><span>Git & GitHub</span><p>Version control and project collaboration.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Selected academic projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h3>StudentHub</h3>
+            <p>A student-focused web project designed to organize useful academic resources and information.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h3>Health Monitoring System</h3>
+            <p>An ESP32-based prototype using temperature and heartbeat sensors with visual and audio alerts.</p>
+            <div class="tags"><span>ESP32</span><span>Sensors</span><span>IoT</span></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <h3>Smart Safety Glasses</h3>
+            <p>A portable safety prototype using an ESP32, ultrasonic sensing and a buzzer for obstacle alerts.</p>
+            <div class="tags"><span>ESP32</span><span>HC-SR04</span><span>Embedded</span></div>
+          </article>
+        </div>
+
+        <button class="btn primary show-message" id="projectButton">Show a message</button>
+        <p id="projectMessage" class="project-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="education" class="section alt-section">
+      <div class="container">
+        <p class="section-label">Education</p>
+        <h2 class="section-title">Academic journey</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div>
+              <p class="timeline-date">Current</p>
+              <h3>Bachelor of Technology — Information Technology</h3>
+              <p>CHARUSAT / CSPIT — Information Technology program.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">Let's connect.</h2>
+          <p>
+            Have a project, collaboration idea, or feedback? Use the form and
+            the page will show a confirmation message.
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Bhakti Tank. Built with HTML, CSS and JavaScript.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
